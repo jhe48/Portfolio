@@ -16,7 +16,7 @@ export default function Home() {
               className='hover:text-white transition-colors'>Projects</a></li>
             <li><a href="#experience"
               className='hover:text-white transition-colors'>Experience</a></li>
-            <li><a href="#contacts"
+            <li><a href="#contact"
               className='hover:text-white transition-colors'>Contact</a></li>
           </ul>
         </div>

@@ -153,7 +153,7 @@ export default function Home() {
               {/* The Looping Video */}
               <div className="relative w-full aspect-video bg-black">
                 <video
-                  src="/dispatch.mp4"
+                  src="/crop.mp4"
                   autoPlay
                   loop
                   muted

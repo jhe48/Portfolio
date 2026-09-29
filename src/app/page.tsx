@@ -86,9 +86,25 @@ export default function Home() {
   slate-800 rounded-xl overflow-hidden relative group'>
               {/* To add a real GIF later, replace this div with: <img src="/your-gif.gif"
   className="w-full h-full object-cover" /> */}
-              <div className='absolute inset-0 flex items-center justify-center text-
-  slate-700 font-mono'>
-                [ AI RED TEAM ]
+              {/* The Mac Buttons (Header) */}
+              <div className="bg-slate-800 h-8 w-full flex items-center px-4 gap-2 border-
+  b border-slate-700">
+                <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                <div className="w-3 h-3 rounded-full bg-green-500"></div>
+              </div>
+
+              {/* The Looping Video */}
+              <div className="relative w-full aspect-video bg-black">
+                <video
+                  src="/dispatch.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover opacity-80 group-hover:opacity-100
+  transition-opacity"
+                />
               </div>
             </div>
           </div>
@@ -126,9 +142,25 @@ export default function Home() {
             {/* Right Side: GIF / Image Placeholder */}
             <div className='w-full md:w-1/2 aspect-video bg-slate-900/50 border border-
   slate-800 rounded-xl overflow-hidden relative group'>
-              <div className='absolute inset-0 flex items-center justify-center text-
-  slate-700 font-mono'>
-                [ CROP CLASSIFICATION ]
+              {/* The Mac Buttons (Header) */}
+              <div className="bg-slate-800 h-8 w-full flex items-center px-4 gap-2 border-
+  b border-slate-700">
+                <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                <div className="w-3 h-3 rounded-full bg-green-500"></div>
+              </div>
+
+              {/* The Looping Video */}
+              <div className="relative w-full aspect-video bg-black">
+                <video
+                  src="/dispatch.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover opacity-80 group-hover:opacity-100
+  transition-opacity"
+                />
               </div>
             </div>
           </div>
@@ -177,9 +209,25 @@ export default function Home() {
   slate-800 rounded-xl overflow-hidden relative group'>
               {/* To add a real GIF later, replace this div with: <img src="/your-gif.
   gif" className="w-full h-full object-cover" /> */}
-              <div className='absolute inset-0 flex items-center justify-center text-
-  slate-700 font-mono'>
-                [ DispatchMesh ]
+              {/* The Mac Buttons (Header) */}
+              <div className="bg-slate-800 h-8 w-full flex items-center px-4 gap-2 border-
+  b border-slate-700">
+                <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                <div className="w-3 h-3 rounded-full bg-green-500"></div>
+              </div>
+
+              {/* The Looping Video */}
+              <div className="relative w-full aspect-video bg-black">
+                <video
+                  src="/dispatch.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover opacity-80 group-hover:opacity-100
+  transition-opacity"
+                />
               </div>
             </div>
           </div>
@@ -216,9 +264,25 @@ export default function Home() {
             {/* Left Side: GIF / Image Placeholder */}
             <div className='w-full md:w-1/2 aspect-video bg-slate-900/50 border border-
   slate-800 rounded-xl overflow-hidden relative group'>
-              <div className='absolute inset-0 flex items-center justify-center text-
-  slate-700 font-mono'>
-                [ CourtMate ]
+              {/* The Mac Buttons (Header) */}
+              <div className="bg-slate-800 h-8 w-full flex items-center px-4 gap-2 border-
+  b border-slate-700">
+                <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                <div className="w-3 h-3 rounded-full bg-green-500"></div>
+              </div>
+
+              {/* The Looping Video */}
+              <div className="relative w-full aspect-video bg-black">
+                <video
+                  src="/dispatch.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover opacity-80 group-hover:opacity-100
+  transition-opacity"
+                />
               </div>
             </div>
           </div>

@@ -231,7 +231,76 @@ export default function Home() {
               </div>
             </div>
           </div>
+          {/* --- ML-META ACADEMIC RESEARCH --- */}
+          <div className='flex flex-col md:flex-row-reverse gap-12 items-center'>
 
+            {/* Left Side: Text & Buttons */}
+            <div className='w-full md:w-1/2'>
+              <p className='text-purple-500 font-bold tracking-widest text-sm mb-
+  2'>ACADEMIC RESEARCH</p>
+              <h3 className='text-3xl font-bold text-white mb-4'>ML-Meta: Interactive
+                Academic Platform</h3>
+              <p className='text-slate-400 mb-6 leading-relaxed'>
+                Collaborated with university professors to build a community-driven, web-
+                based educational platform
+                for advanced machine learning and algorithms. Engineered a custom static
+                site featuring an innovative
+                side-by-side rendering engine that pairs dense academic text with plain-
+                language explanations,
+                utilizing MathJax for LaTeX and automated Node.js build scripts for
+                content generation.
+              </p>
+
+              {/* Tech Stack */}
+              <div className='flex flex-wrap gap-2 mb-8'>
+                <span className='text-xs bg-slate-900 text-slate-300 px-3 py-1 rounded-
+  full border border-slate-800'>JavaScript</span>
+                <span className='text-xs bg-slate-900 text-slate-300 px-3 py-1 rounded-
+  full border border-slate-800'>Node.js</span>
+                <span className='text-xs bg-slate-900 text-slate-300 px-3 py-1 rounded-
+  full border border-slate-800'>MathJax (LaTeX)</span>
+                <span className='text-xs bg-slate-900 text-slate-300 px-3 py-1 rounded-
+  full border border-slate-800'>HTML/CSS</span>
+                <span className='text-xs bg-slate-900 text-slate-300 px-3 py-1 rounded-
+  full border border-slate-800'>Technical Writing</span>
+              </div>
+
+              {/* Links */}
+              <div className='flex gap-4'>
+                <a href="https://github.com/COD1995/ml-meta" target="_blank"
+                  className='px-6 py-2 bg-white text-black font-bold rounded-lg hover:bg-slate-200 transition-colors'>View GitHub</a>
+                <a href="https://cod1995.github.io/ml-meta/" className='px-6 py-2 bg-slate-900 border border-slate-800
+  text-white font-bold rounded-lg hover:bg-slate-800 transition-colors'>Live Demo</a>
+              </div>
+            </div>
+
+            {/* Right Side: CSS MAC WINDOW FRAME */}
+            <div className='w-full md:w-1/2 aspect-video bg-slate-900/50 border border-
+  slate-800 rounded-xl overflow-hidden relative group'>
+              {/* To add a real GIF later, replace this div with: <img src="/your-gif.
+  gif" className="w-full h-full object-cover" /> */}
+              {/* The Mac Buttons (Header) */}
+              <div className="bg-slate-800 h-8 w-full flex items-center px-4 gap-2 border-
+  b border-slate-700">
+                <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                <div className="w-3 h-3 rounded-full bg-green-500"></div>
+              </div>
+
+              {/* The Looping Video */}
+              <div className="relative w-full aspect-video bg-black">
+                <video
+                  src="/dispatch.mp4"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                  className="w-full h-full object-cover opacity-80 group-hover:opacity-100
+  transition-opacity"
+                />
+              </div>
+            </div>
+          </div>
           {/* --- COURTMATE --- */}
           <div className='flex flex-col md:flex-row-reverse gap-12 items-center'>
 

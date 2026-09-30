@@ -1,12 +1,46 @@
 'use client';
 
 // import { Canvas } from '@react-three/fiber';
+import { Canvas, useFrame, useThree } from '@react-three/fiber'
+import { useGLTF, OrbitControls } from '@react-three/drei'
+import * as THREE from 'three'
+import { useEffect, useRef } from 'react'
+
+function Head() {
+  const { scene } = useGLTF('/head.glb')
+  // @ts-ignore
+  const ref = useRef()
+  const { pointer } = useThree()
+
+  useFrame(() => {
+    if (ref.current) {
+      // @ts-ignore
+      ref.current.rotation.y += (pointer.x * 0.5 - ref.current.rotation.y) * 0.05
+      // @ts-ignore
+      ref.current.rotation.x += (-pointer.y * 0.3 - ref.current.rotation.x) * 0.05
+    }
+  })
+  useEffect(() => {
+    scene.traverse((child) => {
+      // @ts-ignore
+      if (child.isMesh) {
+        // @ts-ignore
+        child.material = new THREE.MeshStandardMaterial({
+          color: '#FFD700',
+          roughness: 0.2,
+          metalness: 0.95,
+
+        })
+      }
+    })
+  }, [scene])
+  return <primitive ref={ref} object={scene} scale={5} position={[0, -1.05, 1]} />
+}
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-950 text-slate-200 relative overflow-hidden z-
   0">
-
       {/* --- AMBIENT BACKGROUND GLOWS --- */}
       <div className="absolute top-[20%] left-[-10%] w-[500px] h-[500px] bg-red-500/10
   rounded-full blur-[120px] pointer-events-none -z-10" />
@@ -33,6 +67,15 @@ export default function Home() {
       <section className="h-screen flex flex-col items-center justify-center text-center
   px-6">
         {/* 3D MODEL GOES HERE */}
+        <Canvas camera={{ position: [0, 0, 3], fov: 50 }}>
+          <ambientLight intensity={1.5} />
+          <directionalLight position={[3, 3, 3]} intensity={20} color="#ffffff" />
+          <directionalLight position={[-3, 1, 2]} intensity={1.5} color="#ffd700" />
+          <directionalLight position={[0, 2, -3]} intensity={2.0} color="#ffffff" />
+          <pointLight position={[0, -2, 2]} intensity={1.0} color="#b8860b" />
+          <Head />
+          <OrbitControls enableZoom={false} />
+        </Canvas>
         <h1 className='text-6xl font-bold text-white mb-4'>Jacky He</h1>
         <p className='text-xl text-slate-400 mb-6'>
           Software Engineer | AI & Distributed Systems
